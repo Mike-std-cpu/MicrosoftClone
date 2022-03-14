@@ -1,0 +1,8 @@
+* <span class="material-icons">&#xe5d2;</span>
+    Se usa para poder linkiar el menu de amburguesa que se saco de material design donde e5d2 es el code point para sacr el icons
+    ---
+* Las clases link-hiode son del menu que se va a ocultar
+
+
+
+link de tutorial en momento donde se quedo: https://youtu.be/HOlvoOdIm-k?t=1457
