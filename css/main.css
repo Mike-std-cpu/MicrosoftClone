@@ -48,6 +48,90 @@ nav ul li .link::before {/* el before sirve para dar le efectos de sombreado ant
 nav ul li .link:hover::before {
     transform: scaleX(1);
 }
+nav .more{
+    display: none; /*Oculatrlo del display*/
+}
 nav .movile{
     display: none; /*Ocultar*/
+    width: 100%;
+}
+
+/*--- NAV MOVILE CONFIGURATION----*/
+nav .movile .header{
+    background-color: black;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+nav .movile .header a{
+    color: white;
+    display: inline-flex;
+    text-decoration: none;
+    padding: 10px;
+}
+ nav .movile .header #bmenu{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+ }
+nav .movile .links{
+    display: flex;
+    flex-direction: column;/*columna*/
+    position: relative;
+    z-index: 200;
+}
+nav .movile .links a{
+    display: block; /*Ocupa todo el ancho del elemento*/
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+nav .movile .links a:hover{
+    background-color: white;
+    color: black;
+}
+/* --- --- ---*/
+
+nav .menu{ /*Debe flotar*/
+    position: absolute;
+    display: none;/*none = no sale en la pantalla*/
+    flex-direction: column;
+    min-width: 200px;
+    background-color: white;
+}
+nav .menu a{/*Para cada hipervinculo*/
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+}
+nav .menu a:hover{/*Para cada hipervinculo, cada que pase el cursor se pondra de color negro letras blancas*/
+    background-color: black;
+    color: white;
+}
+/*--- OCULTAR NAV PARA MOVILES---*/
+@media screen and (max-width: 1132px){/*Cuando el display pase a 1132px*/
+    nav .link-hide{
+        display: none;
+    }
+    /*Cuando llegue al maximo de ancho, el display none ocultara el menu con clase
+       link-hide para que no colapse el menu*/
+    nav .more{
+        display: flex;
+    /*Ahora, cuando se ocule eta parte del menu, quiero que muestres el more*/
+    }
+}
+@media screen and (max-width: 640px){/*Cuando el display pase a 1132px*/
+    nav{
+        width: 100%;
+        padding: 0; /*Relleno de 0, osea nada*/
+    }
+    nav ul{
+        display: none;
+    }
+    nav .movile{
+        display: block;
+    }
 }

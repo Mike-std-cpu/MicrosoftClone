@@ -2,7 +2,14 @@
     Se usa para poder linkiar el menu de amburguesa que se saco de material design donde e5d2 es el code point para sacr el icons
     ---
 * Las clases link-hiode son del menu que se va a ocultar
-
-
-
-link de tutorial en momento donde se quedo: https://youtu.be/HOlvoOdIm-k?t=1457
+---------*
+* Hover: La pseudo-clase :hover de CSS coincide cuando el usuario interactúa con un elemento con un dispositivo señalador, pero no necesariamente 
+    lo activa. Generalmente se activa cuando el usuario se desplaza sobre un elemento con el cursor (puntero del mouse).
+----------*
+*before : Se usa para poder hacer una accion antes de otra accion.
+    En CSS, ::before crea un pseudoelemento que es el primer hijo del elemento seleccionado. Es usado normalmente para añadir contenido estético a 
+    un elemento, usando la propiedad content. Este elemento se muestra en línea con el texto de forma predeterminada.
+---------*
+link de tutorial en momento donde se quedo: 
+1.- https://youtu.be/HOlvoOdIm-k?t=1457
+2.- https://youtu.be/HOlvoOdIm-k?t=2049
