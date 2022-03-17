@@ -11,11 +11,17 @@ body{
 }
 
 /*
-------- NavBAR ---------
+__________________ 
+
+NAV BAR
+___________________
 */
+.show {/*js*/
+    display: flex !important;/*Sobre escribir valores en uestros elementos*/
+}
 
 nav{
-    display: flex;
+display: flex;
     align-items: center;
     justify-content: space-between; /*Esto nos ayudara a tener un elemeento un elemento a la izq, uno centro y uno a al derecha*/
     padding: 0 5%;
@@ -77,7 +83,7 @@ nav .movile .header a{
     color: white;
  }
 nav .movile .links{
-    display: flex;
+    display: none;
     flex-direction: column;/*columna*/
     position: relative;
     z-index: 200;
@@ -88,6 +94,7 @@ nav .movile .links a{
     color: white;
     text-decoration: none;
     font-size: 18px;
+    background-color: black;
 }
 nav .movile .links a:hover{
     background-color: white;
@@ -96,6 +103,7 @@ nav .movile .links a:hover{
 /* --- --- ---*/
 
 nav .menu{ /*Debe flotar*/
+    margin-top: 48px;/*Posicion exacta  del top del boton more y el menu desplegado*/
     position: absolute;
     display: none;/*none = no sale en la pantalla*/
     flex-direction: column;
@@ -111,6 +119,20 @@ nav .menu a:hover{/*Para cada hipervinculo, cada que pase el cursor se pondra de
     background-color: black;
     color: white;
 }
+
+/*
+__________________ 
+
+HEADER
+___________________
+*/
+header{
+    background-image: url(../img/halo-infinite-cover-darkmode.jpg);
+    background-size: cover; /*Redimencionara al tamao de la patalla*/
+    background-position: center center;/*Se ajustar centro mientras se achica la dimension de la pantalla*/
+    height: 100vh;
+}
+
 /*--- OCULTAR NAV PARA MOVILES---*/
 @media screen and (max-width: 1132px){/*Cuando el display pase a 1132px*/
     nav .link-hide{
@@ -121,6 +143,9 @@ nav .menu a:hover{/*Para cada hipervinculo, cada que pase el cursor se pondra de
     nav .more{
         display: flex;
     /*Ahora, cuando se ocule eta parte del menu, quiero que muestres el more*/
+    }
+    header{
+        height: 70vh;
     }
 }
 @media screen and (max-width: 640px){/*Cuando el display pase a 1132px*/
@@ -133,5 +158,9 @@ nav .menu a:hover{/*Para cada hipervinculo, cada que pase el cursor se pondra de
     }
     nav .movile{
         display: block;
+    }
+    header{
+        background-position: center 40px;
+        height: 30vh;
     }
 }
